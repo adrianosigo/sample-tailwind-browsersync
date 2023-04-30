@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construção de Layout</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Grid -->
+    <p class="text-lg">Grid 4 Colunas - Completo</p>
+    <div class="grid grid-cols-4 bg-blue-300">
+        <div class="bg-blue-600 p-3 m-3">div 1</div>
+        <div class="bg-blue-600 p-3 m-3">div 2</div>
+        <div class="bg-blue-600 p-3 m-3">div 3</div>
+        <div class="bg-blue-600 p-3 m-3">div 4</div>
+    </div>
+    <!-- Grid -->
+    <p class="text-lg">Grid 4 Colunas - Faltando 1</p>
+    <div class="grid grid-cols-4 bg-blue-300">
+        <div class="bg-blue-600 p-3 m-3">div 1</div>
+        <div class="bg-blue-600 p-3 m-3">div 2</div>
+        <div class="bg-blue-600 p-3 m-3">div 3</div>
+    </div>
+    <!-- Grid -->
+    <p class="text-lg">Grid 9 Colunas - Completo</p>
+    <div class="grid grid-cols-3 bg-blue-200">
+        <div class="bg-blue-600 p-3 m-3">div 1</div>
+        <div class="bg-blue-300 p-3 m-3">div 2</div>
+        <div class="bg-blue-600 p-3 m-3">div 3</div>
+        <div class="bg-blue-300 p-3 m-3">div 4</div>
+        <div class="bg-blue-600 p-3 m-3">div 5</div>
+        <div class="bg-blue-300 p-3 m-3">div 6</div>
+        <div class="bg-blue-600 p-3 m-3">div 7</div>
+        <div class="bg-blue-300 p-3 m-3">div 8</div>
+        <div class="bg-blue-600 p-3 m-3">div 9</div>
+    </div>
+    <!-- Grid -->
+    <p class="text-lg">Grid 9 Colunas - Completo</p>
+    <div class="grid grid-cols-6 bg-blue-200">
+        <div class="bg-blue-600 col-span-1 p-3 m-3">
+            <ul>
+                <li>Linha 1</li>
+                <li>Linha 2</li>
+                <li>Linha 3</li>
+                <li>Linha 4</li>
+                <li>Linha 5</li>
+                <li>Linha 6</li>
+            </ul>
+        </div>
+        <div class="bg-blue-300 col-span-4 p-3 m-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nemo
+            dicta quas dolorem! Animi commodi ea fuga nisi sunt repellendus non totam quas quasi natus doloremque,
+            fugit, architecto assumenda debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nemo
+            dicta quas dolorem! Animi commodi ea fuga nisi sunt repellendus non totam quas quasi natus doloremque,
+            fugit, architecto assumenda debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nemo
+            dicta quas dolorem! Animi commodi ea fuga nisi sunt repellendus non totam quas quasi natus doloremque,
+            fugit, architecto assumenda debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nemo
+            dicta quas dolorem! Animi commodi ea fuga nisi sunt repellendus non totam quas quasi natus doloremque,
+            fugit, architecto assumenda debitis.</div>
+        <div class="bg-blue-600 col-span-1 p-3 m-3">
+            <ul>
+                <li>Linha 1</li>
+                <li>Linha 2</li>
+                <li>Linha 3</li>
+                <li>Linha 4</li>
+                <li>Linha 5</li>
+                <li>Linha 6</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Grid -->
+    <p class="text-lg">Grid 4 Colunas - Completo</p>
+    <div class="grid grid-cols-4 bg-blue-200">
+        <div class="bg-blue-500 col-span-4 p-3 m-3 text-white">
+            Barra Superior
+        </div>
+        <div class="bg-blue-600 col-span-1 p-3 m-3">
+            <ul class="text-white">
+                <li>Linha 1</li>
+                <li>Linha 2</li>
+                <li>Linha 3</li>
+                <li>Linha 4</li>
+                <li>Linha 5</li>
+                <li>Linha 6</li>
+            </ul>
+        </div>
+        <div class="bg-blue-300 col-span-3 p-3 m-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nemo
+            dicta quas dolorem! Animi commodi ea fuga nisi sunt repellendus non totam quas quasi natus doloremque,
+            fugit, architecto assumenda debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nemo
+            dicta quas dolorem! Animi commodi ea fuga nisi sunt repellendus non totam quas quasi natus doloremque,
+            fugit, architecto assumenda debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nemo
+            dicta quas dolorem! Animi commodi ea fuga nisi sunt repellendus non totam quas quasi natus doloremque,
+            fugit, architecto assumenda debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nemo
+            dicta quas dolorem! Animi commodi ea fuga nisi sunt repellendus non totam quas quasi natus doloremque,
+            fugit, architecto assumenda debitis.
+        </div>
+        <div class="bg-blue-500 col-span-4 p-3 m-3 text-white">
+            Barra Inferior
+        </div>
+    </div>
+    <!-- Grid -->
+    <p class="text-lg">Grid 4 Linhas - Completo</p>
+    <div class="grid grid-rows-4 grid-flow-col bg-green-200">
+        <div class="bg-green-100 p-2 m-2 mx-3">div 1</div>
+        <div class="bg-green-200 p-2 m-2 mx-3">div 2</div>
+        <div class="bg-green-300 p-2 m-2 mx-3">div 3</div>
+        <div class="bg-green-400 p-2 m-2 mx-3">div 4</div>
+        <div class="bg-green-500 p-2 m-2 mx-3">div 5</div>
+        <div class="bg-green-600 p-2 m-2 mx-3">div 6</div>
+        <div class="bg-green-700 p-2 m-2 mx-3">div 7</div>
+        <div class="bg-green-800 p-2 m-2 mx-3">div 8</div>
+    </div>
+    <!-- Grid -->
+    <p class="text-lg">Grid 4 Linhas - Incompleto</p>
+    <div class="grid grid-rows-6 grid-flow-col bg-green-200">
+        <div class="bg-green-100 p-2 m-2 mx-3">div 1</div>
+        <div class="bg-green-200 p-2 m-2 mx-3">div 2</div>
+        <div class="bg-green-300 p-2 m-2 mx-3">div 3</div>
+        <div class="bg-green-400 p-2 m-2 mx-3">div 4</div>
+        <div class="bg-green-500 p-2 m-2 mx-3">div 5</div>
+        <div class="bg-green-600 p-2 m-2 mx-3">div 6</div>
+        <div class="bg-green-700 p-2 m-2 mx-3">div 7</div>
+        <div class="bg-green-800 p-2 m-2 mx-3">div 8</div>
+    </div>
+
+    <!-- Grid Gap -->
+    <p class="text-lg">Grid com Gap</p>
+    <div class="grid grid-rows-4 grid-flow-col gap-3">
+        <div class="bg-orange-100 p-2">div 1</div>
+        <div class="bg-orange-200 p-2">div 2</div>
+        <div class="bg-orange-300 p-2">div 3</div>
+        <div class="bg-orange-400 p-2">div 4</div>
+        <div class="bg-orange-500 p-2">div 5</div>
+        <div class="bg-orange-600 p-2">div 6</div>
+        <div class="bg-orange-700 p-2">div 7</div>
+        <div class="bg-orange-800 p-2">div 8</div>
+        <div class="bg-orange-100 p-2">div 1</div>
+        <div class="bg-orange-200 p-2">div 2</div>
+        <div class="bg-orange-300 p-2">div 3</div>
+        <div class="bg-orange-400 p-2">div 4</div>
+        <div class="bg-orange-500 p-2">div 5</div>
+        <div class="bg-orange-600 p-2">div 6</div>
+        <div class="bg-orange-700 p-2">div 7</div>
+        <div class="bg-orange-800 p-2">div 8</div>
+    </div>
+
+
+</body>
+
+</html>

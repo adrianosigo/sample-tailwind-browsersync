@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construção de Layout</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Container -->
+    <div class="container bg-black text-white mx-auto p-4 my-2 border-4 border-red-500">Container</div>
+    <div class="container mx-auto">
+        <p>mx-auto = margem eixo X auto</p>
+    </div>
+
+    <!-- Diferença entre Box Border e Box Content -->
+    <hr class="border-2 my-10">
+    <p class="text-lg">Diferença entre Box Border e Box Content</p>
+    <div class="container box-border bg-purple-300 m-4 p-10 border-4 border-blue-900">
+        Box Border - adiciona uma borda ao redor do elemento enquanto mantém seu tamanho total
+    </div>
+    <div class="container box-content bg-teal-300 m-4 p-10 border-4 border-blue-900">
+        Box Content - define uma largura máxima e centraliza o conteúdo dentro dessa largura máxima
+    </div>
+
+    <!-- Controlando Display -->
+    <hr class="border-2 my-10">
+    <p class="text-lg">Controlando Display</p>
+    <div class="container mt-10">
+        <span class="bg-red-300">Span não são elementos de block - Default Display Inline</span>
+        <span class="bg-red-300">Span não são elementos de block - Default Display Inline</span>
+        <span class="bg-red-300">Span não são elementos de block - Default Display Inline</span>
+        <span class="bg-red-300">Span não são elementos de block - Default Display Inline</span>
+        <div class="bg-teal-300">Div por padrão são elementos de bloco - Default Display Block</div>
+        <div class="bg-teal-300">Div por padrão são elementos de bloco - Default Display Block</div>
+        <div class="bg-teal-300">Div por padrão são elementos de bloco - Default Display Block</div>
+        <div class="bg-teal-300">Div por padrão são elementos de bloco - Default Display Block</div>
+        <span class="bg-green-300 block">Porém span pode receber uma class block - Display Block</span>
+        <span class="bg-green-300 block">Porém span pode receber uma class block - Display Block</span>
+        <span class="bg-green-300 block">Porém span pode receber uma class block - Display Block</span>
+        <span class="bg-green-300 block">Porém span pode receber uma class block - Display Block</span>
+        <div class="inline-block bg-orange-300">Div pode ter o comportamento padrão alterado para Inline</div>
+        <div class="inline-block bg-orange-300">Div pode ter o comportamento padrão alterado para Inline</div>
+        <div class="inline-block bg-orange-300">Div pode ter o comportamento padrão alterado para Inline</div>
+        <div class="inline-block bg-orange-300">Div pode ter o comportamento padrão alterado para Inline</div>
+        <p class="text-lg">Tem 4 Div Ocultas aqui abaixo com a propriedade hidden - Display None</p>
+        <div class="hidden bg-black">Div Oculta</div>
+        <div class="hidden bg-black">Div Oculta</div>
+        <div class="hidden bg-black">Div Oculta</div>
+        <div class="hidden bg-black">Div Oculta</div>
+    </div>
+    <!-- Float e Clearfix - Entrando em Desuso -->
+    <hr class="border-2 my-10">
+    <p class="text-lg mb-10">Float e Clearfix - Entrando em Desuso</p>
+    <div class="bg-gray-600 float-right p-4 text-white">Float Right</div>
+    <div class="bg-gray-600 float-left p-4 text-white">Float Left</div>
+    <div class="clear-both"></div>
+    <div class="bg-gray-600 float-right p-4 text-white">Float Right</div>
+    <div class="bg-gray-600 float-left p-4 text-white">Float Left</div>
+
+    <hr class="border-2 my-10">
+    <p class="text-lg mb-10">Div Overflow</p>
+    <div class="overflow-hidden h-16 m-6 bg-blue-200">
+        <p>Overflow Hidden oculta o conteúdo excedente</p>
+        <p>Overflow Hidden oculta o conteúdo excedente</p>
+        <p>Overflow Hidden oculta o conteúdo excedente</p>
+        <p>Overflow Hidden oculta o conteúdo excedente</p>
+        <p>Overflow Hidden oculta o conteúdo excedente</p>
+        <p>Overflow Hidden oculta o conteúdo excedente</p>
+        <p>Overflow Hidden oculta o conteúdo excedente</p>
+        <p>Overflow Hidden oculta o conteúdo excedente</p>
+    </div>
+    <div class="overflow-auto h-16 m-6 bg-orange-200">
+        <p>Overflow Auto permite ver o restante do conteúdo com scroll</p>
+        <p>Overflow Auto permite ver o restante do conteúdo com scroll</p>
+        <p>Overflow Auto permite ver o restante do conteúdo com scroll</p>
+        <p>Overflow Auto permite ver o restante do conteúdo com scroll</p>
+        <p>Overflow Auto permite ver o restante do conteúdo com scroll</p>
+        <p>Overflow Auto permite ver o restante do conteúdo com scroll</p>
+        <p>Overflow Auto permite ver o restante do conteúdo com scroll</p>
+        <p>Overflow Auto permite ver o restante do conteúdo com scroll</p>
+    </div>
+    <div class="overflow-hidden h-16 m-6 bg-green-200">
+        <p>Overflow Hidden oculta o conteúdo excedente no eixo x
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </p>
+    </div>
+    <div class="overflow-auto h-16 m-6 bg-gray-200">
+        <p>Overflow Auto permite ver o restante do conteúdo com scroll no eixo x
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </p>
+    </div>
+    <!-- Positions -->
+    <hr class="border-2 my-10">
+    <p class="text-lg mb-10">Positions</p>
+    <div class="relative bg-pink-300 p-10">
+        Positions
+        <div class="absolute top-0 right-0 bg-pink-900 p-3">
+            Absolute
+        </div>
+    </div>
+    <!-- Visibility -->
+    <hr class="border-2 my-10">
+    <p class="text-lg mb-10">Visibility</p>
+    <p class="">Visible abaixo</p>
+    <div class="bg-yellow-700 p-3 visible">
+        Visible
+    </div>
+    <p class="">Invisible abaixo</p>
+    <div class="bg-yellow-700 p-3 invisible">
+        Invisible
+    </div>
+    <p class="">Display None abaixo</p>
+    <div class="bg-yellow-700 p-3" style="display: none;">
+        Display None
+    </div>
+    <p class="font-bold">Diferença do Display None para o Invisible</p>
+    <p class="font-thin ml-10">Display None - Objeto e suas margens não são exibidos</p>
+    <p class="font-thin ml-10">Invisible - Apenas objeto é ocultado, as margens são mantidas</p>
+    <!-- Z-index -->
+    <hr class="border-2 my-10">
+    <p class="text-lg mb-10">Z-index</p>
+
+    <div class="container relative">
+        <div class="bg-red-300 h-20 w-20 p-6 absolute -rotate-12 z-10 ">Na Frente</div>
+        <div class="bg-red-700 h-20 w-20 p-6 absolute rotate-12 m-7">Atrás</div>
+    </div>
+    
+</body>
+
+</html>

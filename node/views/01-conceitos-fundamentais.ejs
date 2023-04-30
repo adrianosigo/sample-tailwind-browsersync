@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceitos Fundamentais</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1 class="text-red-600 mt-5 text-lg bg-yellow-200 py-3">
+        Exemplos de Classes com Tailwind - Sempre Mobile First
+    </h1>
+    <!-- Componentes específicos, criados no arquivo src/styles.css -> @layer components { -->
+        <!-- Essa é a forma de criar componentes próprios -->
+    <p class="mt-12 text-xl bg-green-200">Componentes Criados no src/styles.css -> @layer components { </p>
+    <button class="btn-blue">Button</button>
+    <button class="btn-green">Button</button>
+    <button class="btn-red">Button</button>
+
+    <p class="mt-12 text-xl bg-green-200">Div que altera de acordo com o tamanho da tela </p>
+    <div
+        class="ml-20 mt-5 w-4 md:w-6 lg:w-8 xl:w-10 h-4 md:h-6 lg:h-8 xl:h-10 bg-blue-500 md:bg-green-500 lg:bg-purple-500 xl:bg-rose-500">
+    </div>
+    <!-- sm 640px -->
+    <!-- md 768px -->
+    <!-- lg 1024px -->
+    <!-- xl 1280px -->
+
+    <p class="mt-12 text-xl bg-green-200">Propriedades de Pseudo Classe</p>
+    <!-- Pseudo Classe -->
+    <input type="text" class="mt-10 ml-10 bg-gray-300 text-white focus:bg-red-400 focus:text-black" placeholder="Clica Aqui">
+    <input type="text" class="mt-10 ml-10 bg-gray-300 text-white focus:bg-red-400 focus:text-black" placeholder="Clica Aqui">
+
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: node
+      dockerfile: Dockerfile.dev
+    container_name: app
+    ports:
+      - 3000:3000
+    volumes:
+      - ./node:/usr/src/app
+    command: [ "npm", "run", "dev" ]
+    networks:
+      - std-network
+  tailwind:
+    build:
+      context: node
+      dockerfile: Dockerfile.tailwind
+    container_name: tailwind
+    tty: true
+    volumes:
+      - ./node:/usr/src/app
+    command:
+      [
+        "npx",
+        "tailwindcss",
+        "-i",
+        "src/styles.css",
+        "-o",
+        "public/css/styles.css",
+        "--watch"
+      ]
+    restart: always
+    depends_on:
+      - app
+  browsersync:
+    build:
+      context: node
+      dockerfile: Dockerfile.browsersync
+    container_name: browsersync
+    tty: true
+    ports:
+      - 3001:3001
+      - 3002:3002
+    volumes:
+      - ./node:/usr/src/app
+    networks:
+      - std-network
+    command:
+      [
+        "npx",
+        "browser-sync",
+        "start",
+        "--port",
+        "3001",
+        "--ui-port",
+        "3002",
+        "--proxy",
+        "app:3000",
+        "--files",
+        "public",
+        "--files",
+        "views",
+        "--no-open"
+      ]
+    restart: always
+    depends_on:
+      - app
+networks:
+  std-network:
+    driver: bridge

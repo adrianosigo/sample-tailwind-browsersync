@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construção de Layout</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Customizar -->
+    <p class="text-lg">Customizar arquivo tailwind.config.js</p>
+    <div class="grid grid-cols-4 bg-blue-300">
+        <div class="bg-gray-600 col-span-1 p-3 m-3 font-semibold text-white">
+            <p>module.exports = {</p>
+            <p class="ml-4">content: ["./views/**/*.{html,js,ejs}"],</p>
+            <p class="ml-4 text-red-400">theme: {</p>
+            <p class="ml-8">extend: {},</p>
+            <p class="ml-4 text-red-400">},</p>
+            <p class="ml-4">plugins: [],</p>
+            <p>}</p>
+        </div>
+        <div class="bg-gray-600 col-span-3 p-3 m-3 font-semibold text-white">
+            <p class="text-3xl mt-6 p-10">Valores adicionados dentro de theme sobrepõem valores padrões.</p>
+        </div>
+    </div>
+    <!-- Customizar -->
+    <p class="text-lg">Customizar cores padrões Tailwind</p>
+    <div class="grid grid-cols-4 bg-blue-300">
+        <div class="bg-gray-600 col-span-1 p-3 m-3 font-semibold text-white">
+            <p>module.exports = {</p>
+            <p class="ml-4">content: ["./views/**/*.{html,js,ejs}"],</p>
+            <p class="ml-4">theme: {</p>
+            <p class="ml-8 text-red-400">colors:{</p>
+            <p class="ml-12 text-red-400">black: '#010101'</p>
+            <p class="ml-8 text-red-400">},</p>
+            <p class="ml-8">extend: {},</p>
+            <p class="ml-4">},</p>
+            <p class="ml-4">plugins: [],</p>
+            <p>}</p>
+        </div>
+        <div class="bg-gray-600 col-span-3 p-3 m-3 font-semibold text-white">
+            <p class="text-3xl mt-6 p-10">Adicionar a propriedade colors sobrepõe todas as cores do Tailwind padrão. Dessa
+                forma será necessário adicionar todas as cores do projeto</p>
+        </div>
+    </div>
+    <!-- Customizar -->
+    <p class="text-lg">Customizar tamanhos de tela padrões Tailwind</p>
+    <div class="grid grid-cols-4 bg-blue-300">
+        <div class="bg-gray-600 col-span-1 p-3 m-3 font-semibold text-white">
+            <p>module.exports = {</p>
+            <p class="ml-4">content: ["./views/**/*.{html,js,ejs}"],</p>
+            <p class="ml-4">theme: {</p>
+            <p class="ml-8 text-red-400">screens:{</p>
+            <p class="ml-12 text-red-400">'tablet': '640px'</p>
+            <p class="ml-8 text-red-400">},</p>
+            <p class="ml-8">extend: {},</p>
+            <p class="ml-4">},</p>
+            <p class="ml-4">plugins: [],</p>
+            <p>}</p>
+        </div>
+        <div class="bg-gray-600 col-span-3 p-3 m-3 font-semibold text-white">
+            <p class="text-3xl mt-6 p-10">Adicionar a propriedade screens sobrepõe todas as propriedades padrões de tela.</p>
+        </div>
+    </div>
+    <!-- Customizar -->
+    <p class="text-lg">Customizar tamanhos de tela padrões Tailwind com Max</p>
+    <div class="grid grid-cols-4 bg-blue-300">
+        <div class="bg-gray-600 col-span-1 p-3 m-3 font-semibold text-white">
+            <p>module.exports = {</p>
+            <p class="ml-4">content: ["./views/**/*.{html,js,ejs}"],</p>
+            <p class="ml-4">theme: {</p>
+            <p class="ml-8 text-red-400">screens:{</p>
+            <p class="ml-12 text-red-400">'cel': {'max': '400px'}</p>
+            <p class="ml-8 text-red-400">},</p>
+            <p class="ml-8">extend: {},</p>
+            <p class="ml-4">},</p>
+            <p class="ml-4">plugins: [],</p>
+            <p>}</p>
+        </div>
+        <div class="bg-gray-600 col-span-3 p-3 m-3 font-semibold text-white">
+            <p class="text-3xl mt-6 p-10">Adicionar a propriedade screens sobrepõe todas as propriedades padrões de tela.</p>
+        </div>
+    </div>
+    <!-- Customizar -->
+    <p class="text-lg">Customizar cores Estendendo as padrões</p>
+    <div class="grid grid-cols-4 bg-green-300">
+        <div class="bg-gray-600 col-span-1 p-3 m-3 font-semibold text-white">
+            <p>module.exports = {</p>
+            <p class="ml-4">content: ["./views/**/*.{html,js,ejs}"],</p>
+            <p class="ml-4">theme: {</p>
+                <p class="ml-8">extend: {</p>
+                    <p class="ml-12 text-blue-400">colors:{</p>
+                    <p class="ml-16 text-blue-400">'new-blue': '#252525'</p>
+                    <p class="ml-12 text-blue-400">},</p>
+            <p class="ml-8">},</p>
+            <p class="ml-4">},</p>
+            <p class="ml-4">plugins: [],</p>
+            <p>}</p>
+        </div>
+        <div class="bg-gray-600 col-span-3 p-3 m-3 font-semibold text-white">
+            <p class="text-3xl mt-6 p-10">Estende as cores padrões do Tailwind adicionando novas</p>
+        </div>
+    </div>
+    <!-- Customizar -->
+    <p class="text-lg">Customizar Espaçamentos Estendendo as padrões</p>
+    <div class="grid grid-cols-4 bg-orange-300">
+        <div class="bg-gray-600 col-span-1 p-3 m-3 font-semibold text-white">
+            <p>module.exports = {</p>
+            <p class="ml-4">content: ["./views/**/*.{html,js,ejs}"],</p>
+            <p class="ml-4">theme: {</p>
+                <p class="ml-8">extend: {</p>
+                    <p class="ml-12 text-purple-400">spacing:{</p>
+                    <p class="ml-16 text-purple-400">'50': '12.5rem'</p>
+                    <p class="ml-12 text-purple-400">},</p>
+            <p class="ml-8">},</p>
+            <p class="ml-4">},</p>
+            <p class="ml-4">plugins: [],</p>
+            <p>}</p>
+        </div>
+        <div class="bg-gray-600 col-span-3 p-3 m-3 font-semibold text-white">
+            <p class="text-3xl mt-6 p-10">Estende os espaçamentos padrões do Tailwind adicionando novos</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
