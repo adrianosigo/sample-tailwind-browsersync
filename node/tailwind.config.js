@@ -42,5 +42,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'), // necessário executar o comando -> npm install -D @tailwindcss/forms
+  ],
 }
