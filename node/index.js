@@ -71,4 +71,8 @@ app.get("/01-bordas", (req, res) => {
   res.render("01-bordas");
 });
 
+app.get("/01-dark-mode", (req, res) => {
+  res.render("01-dark-mode");
+});
+
 app.listen(port, () => console.log("Server running on port " + port));

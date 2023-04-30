@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/scripts.js"></script>
+</head>
+
+<body>
+    <h1 class="mt-5 p-2 bg-black text-white font-bold border-2">Dark Mode Media</h1>
+    <div class="grid grid-cols-4 bg-blue-300">
+        <div class="bg-gray-600 col-span-1 p-3 m-3 font-semibold text-white">
+            <p>module.exports = {</p>
+            <p class="ml-4">content: ["./views/**/*.{html,js,ejs}"],</p>
+            <p class="ml-4 text-red-400">darkMode: 'media',</p>
+            <!-- <p class="ml-8">extend: {},</p> -->
+            <p class="ml-4 ">},</p>
+            <p class="ml-4">plugins: [],</p>
+            <p>}</p>
+        </div>
+        <div class="bg-gray-600 col-span-3 p-3 m-3 font-semibold text-white">
+            <p class="text-3xl mt-6 p-10">Dark Mode por media. De acordo com o sistema operacional ou navegador a opção
+                muda automaticamente</p>
+        </div>
+    </div>
+    <div class="bg-blue-custom-50 dark:bg-blue-800 text-black dark:text-white font-bold text-center p-10">
+        <p>Dark Mode Exemplo</p>
+    </div>
+    <div class="bg-orange-50 dark:bg-orange-800 text-black dark:text-white font-bold text-center p-10">
+        <p>Dark Mode Exemplo</p>
+    </div>
+    <div class="bg-amber-200 dark:bg-amber-700 text-black font-bold dark:text-white text-center p-10">
+        <p>Dark Mode Exemplo</p>
+    </div>
+    <h1 class="mt-5 p-2 bg-black text-white font-bold border-2">Dark Mode Class</h1>
+    <div class="grid grid-cols-4 bg-blue-300">
+        <div class="bg-gray-600 col-span-1 p-3 m-3 font-semibold text-white">
+            <p>module.exports = {</p>
+            <p class="ml-4">content: ["./views/**/*.{html,js,ejs}"],</p>
+            <p class="ml-4 text-red-400">darkMode: 'class',</p>
+            <!-- <p class="ml-8">extend: {},</p> -->
+            <p class="ml-4 ">},</p>
+            <p class="ml-4">plugins: [],</p>
+            <p>}</p>
+        </div>
+        <div class="bg-gray-600 col-span-3 p-3 m-3 font-semibold text-white">
+            <p class="text-3xl mt-6 p-10">Dark Mode por class. </p>
+        </div>
+        <button id="dark-mode" class="m-10 p-10 bg-green-300 rounded-lg shadow-2xl text-black font-bold hover:bg-green-400 
+            duration-300 dark:bg-purple-900 dark:text-white dark:hover:bg-purple-700">Ativar/Desativar dark mode</button>
+    </div>
+    <div class="bg-blue-custom-50 dark:bg-blue-800 text-black dark:text-white font-bold text-center p-10">
+        <p>Dark Mode Exemplo</p>
+    </div>
+    <div class="bg-orange-50 dark:bg-orange-800 text-black dark:text-white font-bold text-center p-10">
+        <p>Dark Mode Exemplo</p>
+    </div>
+    <div class="bg-amber-200 dark:bg-amber-700 text-black font-bold dark:text-white text-center p-10">
+        <p>Dark Mode Exemplo</p>
+    </div>
+</body>
+
+</html>

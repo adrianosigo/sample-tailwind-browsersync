@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./views/**/*.{html,js,ejs}"],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
@@ -20,7 +21,7 @@ module.exports = {
         'spotify-hover': '#18D760',
         'spotify-purple': '#2D46B9',
         'facebook-green': '#42b72a',
-        'facebook-blue': '#1877f2',
+        'facebook-blue': '#1877f2'
       },
       backgroundImage: theme => ({
         'cidade-custom': "url('/img/bg_ny_pic.jpeg')",
