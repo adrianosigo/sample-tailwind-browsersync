@@ -67,4 +67,8 @@ app.get("/05-backgrounds", (req, res) => {
   res.render("05-backgrounds");
 });
 
+app.get("/01-bordas", (req, res) => {
+  res.render("01-bordas");
+});
+
 app.listen(port, () => console.log("Server running on port " + port));

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1 class="mt-5 p-2 bg-black text-white font-bold border-2">Bordas</h1>
+    <h1 class="mt-5 p-2 bg-blue-100 border-2">rounded</h1>
+    <div class="bg-blue-50 h-18 p-10">
+        <button class="m-4 p-4 bg-red-400 rounded-sm">Menor</button>
+        <button class="m-4 p-4 bg-red-400 rounded">Normal</button>
+        <button class="m-4 p-4 bg-red-400 rounded-3xl">Maior</button>
+        <button class="m-4 p-4 bg-red-400 w-20 h-20 rounded-full">Circular</button>
+    </div>
+    <h1 class="mt-5 p-2 bg-blue-100 border-2">Elementos Span e outros, precisam da propriedade block para ser
+        transformado em bloco / A class inline-flex muda o comportamento padrão e coloca os itens em linha</h1>
+    <div class="bg-blue-50 h-18 p-10 ">
+        <span class="m-4 p-4 bg-red-400 w-20 h-20 rounded-full inline-flex">Circular</span>
+        <span class="m-4 p-4 bg-red-400 w-20 h-20 rounded-full inline-flex">Circular</span>
+        <span class="m-4 p-4 bg-red-400 w-20 h-20 rounded-full block">Circular</span> <!-- ex sem inline-flex -->
+        <span class="m-4 p-4 bg-red-400 w-20 h-20 rounded-full">Circular</span> <!-- ex sem block -->
+    </div>
+    <h1 class="mt-5 p-2 bg-blue-100 border-2">cor - border-*</h1>
+    <div class="bg-blue-50 h-auto p-10">
+        <span class="bg-blue-500 w-20 h-10 block m-4 text-white text-center border-4 border-yellow-500 ">Botão</span>
+        <span
+            class="bg-blue-500 w-20 h-10 block m-4 text-white text-center border-4 border-yellow-500 rounded-lg">Botão</span>
+    </div>
+    <h1 class="mt-5 p-2 bg-blue-100 border-2">border-opacity-*</h1>
+    <div class="bg-blue-50 h-auto p-10">
+        <span
+            class="bg-pink-200 w-40 h-10 block m-4 text-white text-center border-4 border-purple-500 border-opacity-25">Opacidade
+            25</span>
+        <span
+            class="bg-pink-200 w-40 h-10 block m-4 text-white text-center border-4 border-purple-500 border-opacity-50">Opacidade
+            50</span>
+        <span
+            class="bg-pink-200 w-40 h-10 block m-4 text-white text-center border-4 border-purple-500 border-opacity-75">Opacidade
+            75</span>
+    </div>
+    <h1 class="mt-5 p-2 bg-blue-100 border-2">estilo de borda</h1>
+    <div class="bg-blue-50 h-auto p-10">
+        <span class="bg-red-600 w-40 h-10 block m-4 text-white text-center border-4 border-white">normal</span>
+        <span
+            class="bg-red-600 w-40 h-10 block m-4 text-white text-center border-4 border-white border-dashed">dashed</span>
+        <span
+            class="bg-red-600 w-40 h-10 block m-4 text-white text-center border-4 border-white border-double">double</span>
+        <span
+            class="bg-red-600 w-40 h-10 block m-4 text-white text-center border-4 border-white border-dotted">dotted</span>
+    </div>
+    <h1 class="mt-5 p-2 bg-blue-100 border-2">divide-* eixo x</h1>
+    <div class="grid grid-cols-4 divide-x-4 divide-blue-900 h-16">
+        <div class="text-center">div 1</div>
+        <div class="text-center">div 2</div>
+        <div class="text-center">div 3</div>
+        <div class="text-center">div 4</div>
+    </div>
+    <div class="grid grid-cols-4 divide-x-4 divide-blue-900 divide-dotted h-16">
+        <div class="text-center">div 1</div>
+        <div class="text-center">div 2</div>
+        <div class="text-center">div 3</div>
+        <div class="text-center">div 4</div>
+    </div>
+    <div class="grid grid-cols-4 divide-x-4 divide-blue-900 divide-double h-16">
+        <div class="text-center">div 1</div>
+        <div class="text-center">div 2</div>
+        <div class="text-center">div 3</div>
+        <div class="text-center">div 4</div>
+    </div>
+    <h1 class="mt-5 p-2 bg-blue-100 border-2">divide-* eixo y</h1>
+    <div class="divide-y-4 divide-green-700 h-16">
+        <p>Texto</p>
+        <p>Texto</p>
+        <p>Texto</p>
+        <p>Texto</p>
+    </div>
+    <div class="divide-y-4 divide-green-700 h-16 divide-double mt-20">
+        <p>Texto</p>
+        <p>Texto</p>
+        <p>Texto</p>
+        <p>Texto</p>
+    </div>
+    <div class="divide-y-4 divide-green-700 h-16 divide-dotted mt-20">
+        <p>Texto</p>
+        <p>Texto</p>
+        <p>Texto</p>
+        <p>Texto</p>
+    </div>
+    <h1 class="mt-24 p-2 bg-blue-100 border-2">shadow-*</h1>
+    <div class="h-20 w-20 inline-block bg-blue-100 rounded-md m-5 text-center shadow-xs">
+        <p>xs</p>
+    </div>
+    <div class="h-20 w-20 inline-block bg-blue-100 rounded-md m-5 text-center shadow-md">
+        <p>md</p>
+    </div>
+    <div class="h-20 w-20 inline-block bg-blue-100 rounded-md m-5 text-center shadow-lg">
+        <p>lg</p>
+    </div>
+    <div class="h-20 w-20 inline-block bg-blue-100 rounded-md m-5 text-center shadow-xl">
+        <p>xl</p>
+    </div>
+    </div>
+    <div class="h-20 w-20 inline-block bg-blue-100 rounded-md m-5 text-center shadow-2xl">
+        <p>2xl</p>
+    </div>
+    <h1 class="mt-24 p-2 bg-blue-100 border-2"></h1>
+</body>
+
+</html>
