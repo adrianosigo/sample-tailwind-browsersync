@@ -12,6 +12,7 @@ O arquivo tailwind.config.js tem um parâmetro **content** que é responsável p
 content: ["./views/**/*.{ejs}"],
 ```
 
+
 O parâmetro --watch faz com que o Tailwind CSS fique escutando as alterações nos arquivos e gere o arquivo styles.css final. Caso não queira usar o builder automático, basta rodar sem o parâmetro --watch manualmente toda vez que um arquivo for salvo.
 
 Para facilitar o processo de desenvolvimento, foi adicionado um script no package.json que executa o comando acima. Para executar o script, basta rodar o comando abaixo:
