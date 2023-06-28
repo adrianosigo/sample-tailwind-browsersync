@@ -1,5 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  purge: {
+    enabled: true,
+    content: ["./views/**/*.{html,js,ejs}"],
+  },
   content: ["./views/**/*.{html,js,ejs}"],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
